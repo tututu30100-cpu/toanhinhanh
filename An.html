@@ -1,0 +1,275 @@
+
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Một số hình ảnh về trường</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+
+<style>
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+    background: linear-gradient(135deg, #FFD6FF, #E8F0FF, #FFE5F4);
+    color: #D44177;
+    overflow-x: hidden;
+}
+
+/* ==== HOA RƠI ==== */
+.falling-flower{
+    position: fixed;
+    top: -10px;
+    font-size: 24px;
+    animation: fall linear infinite;
+    pointer-events: none;
+}
+
+@keyframes fall{
+    0%{transform: translateY(-10px) rotate(0deg); opacity: 1;}
+    100%{transform: translateY(110vh) rotate(360deg); opacity: 0;}
+}
+
+/* ==== HEADER ==== */
+.header{
+    background: linear-gradient(rgba(255,170,200,0.35), rgba(255,170,200,0.35)),
+    url('https://images.unsplash.com/photo-1541339907198-e08756ebafe3?auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header h1{
+    font-family: 'Pacifico', cursive;
+    font-size: 3rem;
+    color: #fff5fa;
+    text-shadow: 0 0 18px rgba(255,180,225,0.9),
+                 0 0 26px rgba(255,255,255,0.8);
+    letter-spacing: 1px;
+    padding: 10px 16px;
+    backdrop-filter: blur(3px);
+    border-radius: 16px;
+}
+
+/* ==== CONTAINER ==== */
+.container{
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.intro-text{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.intro-text h2{
+    font-size: 2.3rem;
+    font-weight: 800;
+    color: #E6508A;
+}
+
+.intro-text p{
+    margin-top: 10px;
+    font-size: 1.15rem;
+    color: #B1336E;
+}
+
+/* ==== GALLERY ==== */
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 28px;
+}
+
+/* ==== CARD ==== */
+.card{
+    background: #FFF7CA;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 6px 22px rgba(255,130,180,0.25);
+    transition: 0.36s;
+    transform: translateY(0);
+}
+
+.card:hover{
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 16px 32px rgba(255,150,200,0.45);
+}
+
+.card img{
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.card-content{
+    padding: 18px 20px 22px;
+}
+
+.card-content h3{
+    font-size: 18px;
+    color: #E34F76;
+    font-weight: 800;
+    margin-bottom: 6px;
+}
+
+.card-content p{
+    font-size: 14.5px;
+    color: #715b5b;
+}
+
+/* ==== FOOTER ==== */
+footer{
+    background: #FF8FB7;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    font-size: 14px;
+    border-top-left-radius: 22px;
+    border-top-right-radius: 22px;
+    margin-top: 70px;
+}
+ /* --- NÚT QUAY LẠI MÀU MÈ --- */
+        .btn-back {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            background: linear-gradient(135deg, #6e8efb, #a777e3, #f5576c);
+            background-size: 200% auto;
+            color: #ffffff !important;
+            padding: 12px 25px;
+            border-radius: 50px;
+            font-size: 15px;
+            font-weight: 700;
+            box-shadow: 0 4px 15px rgba(245, 87, 108, 0.4);
+            transition: all 0.4s ease;
+            margin-bottom: 40px;
+        }
+
+</style>
+</head>
+
+<body>
+
+<span class="falling-flower" style="left:10%; animation-duration:10s;">🌸</span>
+<span class="falling-flower" style="left:30%; animation-duration:14s;">💮</span>
+<span class="falling-flower" style="left:50%; animation-duration:12s;">🌸</span>
+<span class="falling-flower" style="left:70%; animation-duration:16s;">💮</span>
+<span class="falling-flower" style="left:90%; animation-duration:11s;">🌸</span>
+
+<header class="header">
+    <h1>🎀 Trường THPT Huỳnh Văn Nghệ 🎀</h1>
+</header>
+
+<div class="container">
+
+    <div class="intro-text">
+        <h2>Tin tức nổi bật</h2>
+    </div>
+
+    <div class="gallery">
+
+        <div class="card">
+            <a href="https://tututu30100-cpu.github.io/hoitrai/">
+                <img src="https://scontent.fsgn21-1.fna.fbcdn.net/v/t39.30808-6/614860033_122111871549153525_607498737224432186_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFuwzzXNk8nUTinV_YjYmSouxCIpe8chCG7EIil7xyEIVSvSq7pNffGMgEZpf0MC45PpkBxZyCC4dbQFrAl3D9m&_nc_ohc=uY9y1ziotRsQ7kNvwH9A3qI&_nc_oc=AdkVjAbiPdNuYSBM4twyWL6k2xRsc1ROIecZZJIJPndnh0N3c5-jDpyd5YjbWex1JhE&_nc_zt=23&_nc_ht=scontent.fsgn21-1.fna&_nc_gid=ufCU_jVstzitg8KjBsK8lw&oh=00_AfogDcikW2v2XmSE3suz5rt2cjB9EPEdb0IiKFDPEqhrpg&oe=69684702">
+                
+                <div class="card-content">
+
+                
+                    <h3> Hội trại cụm 12,13</h3></a>
+                    <p>Một trải nghiệm đáng quý của tuổi trẻ THPT Huỳnh Văn Nghệ.</p>
+                </div>
+            
+        </div>
+
+        <div class="card">
+            <a href="https://tututu30100-cpu.github.io/thanh-ni-n/">
+                <img src="https://scontent.fsgn21-1.fna.fbcdn.net/v/t39.30808-6/501050488_1027587622902406_3060391845152814350_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeFuQ1MYjAG1GBhQLXSAoBNBeUc0YhQNQ4h5RzRiFA1DiAO5R4yWWoJA7Cz0xKZprGJpV1JOoHdzYg7ZPEBjuOkO&_nc_ohc=L0UJrGDivTAQ7kNvwGo3VWN&_nc_oc=AdmtQPIvm1PmGGQZMAd5ciyyXiQnQQ8cCghQs5_aavGEdf3yrJ9hYnNzwGyPkg9NtfU&_nc_zt=23&_nc_ht=scontent.fsgn21-1.fna&_nc_gid=RPQyzu1w2eah1G3t2lMKXw&oh=00_Afo4fibnbcLc2rPH_N_jyJBBnn4rwqYCVEGGaGYU3NFWJg&oe=6968D3E5">
+                <div class="card-content">
+                    <h3> Tiếp sức mùa thi</h3></a>
+                    <p> Những nụ cười thường trực trên môi, sự ân cần qua từng hành động. Tuổi trẻ rực rỡ với màu áo xanh. </p>
+                </div>
+            
+        </div>
+
+        <div class="card">
+            <a href="https://tututu30100-cpu.github.io/bongda/">
+                <img src="https://scontent.fsgn5-14.fna.fbcdn.net/v/t39.30808-6/484032108_664100822829586_790231021190198612_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHtkhvPs0x2f59qb-PGa_taptwqWu8x6TOm3Cpa7zHpM7bySMIR73jae-EspIDIfPSkBfQnNRDwn5MO92_vr4KN&_nc_ohc=YN1cuXYIe34Q7kNvwGeE5uk&_nc_oc=AdlZD2KdueuistwQGRb3lLZvavi334x6iMB2rofmejQgcChFSsCuJo5AbdpiNrCxLZ4&_nc_zt=23&_nc_ht=scontent.fsgn5-14.fna&_nc_gid=ob85fQsWoTz9Fq6VW0YfAA&oh=00_AfrivfhSdQwKQJckdgk4vvYPJ5q64W2ey_Yr-BA7wPwSQw&oe=6968CE77">
+                
+                <div class="card-content">
+                    <h3>Bóng đá</h3>
+                </a>
+                    <p>Nơi đam mê được tỏa sáng.</p> 
+                </div>
+           
+        </div>
+
+        <div class="card">
+            <a href="https://tututu30100-cpu.github.io/trainghiem/">
+                <img src="https://scontent.fsgn21-1.fna.fbcdn.net/v/t39.30808-6/594059076_122096216775153525_9175390477226242656_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFeF7Lp0isRwxgVCGBXnz239yuE5ElxKAj3K4TkSXEoCKe0nJFCM1dM7BK_dNOlT9nsDa9CC-mC7LPMBgLdja4z&_nc_ohc=H-PYzk_ay6QQ7kNvwEsYFZm&_nc_oc=AdlwxHBS_9weBoFWmfxgSxcACIYTvWZshAFIi7LvmB7K1git689SKLUlr4y2ftMQHB8&_nc_zt=23&_nc_ht=scontent.fsgn21-1.fna&_nc_gid=3WtU8vtGuWunadoHVlFBdw&oh=00_AfoWKN6JtomvnWegwt9tcHpc929E0YJDIltGNT_jGvFftA&oe=69683516"> 
+            
+                <div class="card-content">
+                    <h3> Hoạt động trải nghiệm</h3></a>
+                    <p> Cũng là lúc buông bút xuống và chạy thôi.</p>
+                </div>
+           
+        </div>
+
+    </div>
+</div>
+ <a href="co.html" class="btn-back">
+        <i class="fa-solid fa-circle-arrow-left"></i> 
+        <span>Quay lại trang đầu</span>
+    </a>
+<footer class="footer-contact">
+        <div class="footer-brand" style="
+            background: linear-gradient(to right, #ff0000, #ff7f00, #ffff00, #00ff00, #00d2ff, #4b0082, #ff00ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-size: 200% auto;
+            animation: rainbow_move 3s linear infinite;
+            font-family: 'Montserrat', sans-serif; 
+            font-size: 28px; 
+            font-weight: 900; 
+            margin-bottom: 25px;">
+            @NHỮNG CHÚ NGỰA CON
+        </div>
+
+        <div style="margin-bottom: 30px; line-height: 2.2;">
+            <p style="color: #ffffff; font-size: 17px; font-weight: 600; text-shadow: 0 0 10px rgba(0, 210, 255, 0.5);">
+                📍 <span style="color: var(--neon-blue);">ĐỊA CHỈ:</span> 
+                <span style="color: #cbd5e1;">HỘI ÁNH SAO TRỜI</span>
+            </p>
+            
+            <p style="color: #ffffff; font-size: 20px; font-weight: 800; letter-spacing: 1px;">
+              
+            </p>
+
+            <p style="color: #ffffff; font-size: 16px; font-weight: 600;">
+                📧 <span style="color: var(--neon-green);">DALSEONGK8@gmail.com:</span> 
+                <span style="color: #cbd5e1; border-bottom: 1px dashed var(--neon-green);">thpthuynhvannghe@binhduong.edu.vn</span>
+            </p>
+        </div>
+
+        <div class="footer-bottom" style="padding-top: 30px; border-top: 1px solid rgba(255,255,255,0.1); font-size: 12px; color: #64748b; font-weight: 800;">
+            &copy; NHỮNG CHÚ NGỰA CON | THE COMPANY OF LIGHT
+        </div>
+		
+		
+    </footer>
+</body>
+</html>
